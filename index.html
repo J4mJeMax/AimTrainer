@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aim Training online</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--Preloader-->
+  <section id="preloader" class="d-none"></section>
+
+<!--Main menu-->
+  <section id="mainMenu">
+  <h1 class="title">Aim trainer online</h1>
+  <ul id="menu">
+    <li id="defaultTraining">Default training</li>
+    <li id="reflexTraining">Reflex training</li>
+    <li id="settings">Settings</li>
+    <li id="credits">Credits</li>
+<!--    <span id="menuScore">-->
+<!--      <h3>-->
+<!--        Previous game points : <span class="points"></span>-->
+<!--      </h3>-->
+<!--      <h3>-->
+<!--        Time : <span class="time"></span>-->
+<!--      </h3>-->
+<!--    </span>-->
+  </ul>
+  </section>
+  <!-- Default training -->
+  <section id="defaultTrainingSection" class="d-none">
+    <div id="close">
+      <span id="closeTab">
+        <hr>
+        <hr>
+      </span>
+      <h3>Points :
+        <span id="points">0</span>
+      </h3>
+    </div>
+    <div id="bottom">
+      <h1 id="gameName"></h1>
+      <h3 id="gameDesc"></h3>
+      <button id="startAiming">Start aiming!</button>
+    </div>
+    <div id="target" class="d-none"></div>
+  </section>
+
+
+<!--Settings-->
+  <section id="settingsSection" class="d-none">
+    <h1 class="title">Aim trainer online</h1>
+    <div>
+      <h3 class="subtitle">General settings</h3>
+      <label for="sizeOfGap">Gap size</label>
+      <input type="number" id="sizeOfGap" min="0">
+
+      <h3 class="subtitle">Reflex game settings</h3>
+      <label for="displayTime">Displaying time</label>
+      <input type="number" id="displayTime" min="0">
+
+      <label for="timeBetweenGap">Time between displaying time</label>
+      <input type="number" id="timeBetweenGap" min="0">
+
+      <label for="Sound">Sound</label>
+      <select name="" id="Sound">
+        <option value="0">None</option>
+        <option value="1">Default</option>
+        <option value="2">CS:GO</option>
+        <option value="3">Call of duty</option>
+        <option value="3">Battlefield</option>
+      </select>
+
+    </div>
+    <button id="saveSettings">Save changes</button>
+  </section>
+
+<!--credits-->
+  <section id="creditsSection" class="d-none">
+    <h1 class="title"></h1>
+    <div>
+      <p>Project manager</p>
+      <p>Programmer</p>
+      <p>Graphic</p>
+      <button id="closeCredits">Go back to menu</button>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
